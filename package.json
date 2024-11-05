@@ -11,6 +11,8 @@
     "web:lint": "npm -w packages/web run lint",
     "cdk:deploy": "npm -w packages/cdk run cdk deploy -- --all",
     "cdk:destroy": "npm -w packages/cdk run cdk destroy",
+    "cdk:deploy:sandbox": "npm -w packages/cdk run cdk deploy -- --all --profile sandbox",
+    "cdk:destroy:sandbox": "npm -w packages/cdk run cdk destroy -- --profile sandbox",
     "cdk:lint": "npm -w packages/cdk run lint",
     "extension:ci": "cd browser-extension && npm ci",
     "extension:dev": "cd browser-extension && npm run dev",

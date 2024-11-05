@@ -53,7 +53,7 @@ const useGenerateTextPageState = create<StateType>((set) => {
   };
 });
 
-const GenerateTextPage: React.FC = () => {
+const AsasorePage: React.FC = () => {
   const {
     information,
     setInformation,
@@ -151,7 +151,7 @@ const GenerateTextPage: React.FC = () => {
   return (
     <div className="grid grid-cols-12">
       <div className="invisible col-span-12 my-0 flex h-0 items-center justify-center text-xl font-semibold lg:visible lg:my-5 lg:h-min print:visible print:my-5 print:h-min">
-        文章生成だよ
+        アサソレ
       </div>
       <div className="col-span-12 col-start-1 mx-2 lg:col-span-10 lg:col-start-2 xl:col-span-10 xl:col-start-2">
         <Card label="文章の元になる情報">
@@ -212,4 +212,4 @@ const GenerateTextPage: React.FC = () => {
   );
 };
 
-export default GenerateTextPage;
+export default AsasorePage;
