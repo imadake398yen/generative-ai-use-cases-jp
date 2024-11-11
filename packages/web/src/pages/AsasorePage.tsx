@@ -115,10 +115,12 @@ const AsasorePage: React.FC = () => {
   }, [text, setTypingTextInput]);
 
   const getGeneratedText = (information: string, context: string) => {
+    const newInformation = `「${information}」で始まる、「${context}」といえば？という質問に対して最適な答えを考えてください。質問者を説得する理由も合わせて答えてください。ただし、濁点や半濁点を取ったりつけたりしてはいけません。`;
+    const newContext = "「解答: ◯◯、理由: ◯◯」という形で答える。";
     postChat(
       prompter.generateTextPrompt({
-        information,
-        context,
+        information: newInformation,
+        context: newContext,
       }),
       true
     );
